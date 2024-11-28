@@ -51,6 +51,10 @@ router.get('/Scoring.html', function(req, res, next) {
   res.render('Scoring', { title: 'ML Based monitoring Scoring ddc' });
 });
 
+router.get("/Case_test.html", function (req, res, next) {
+	res.render("Case_test", { title: "Case_test ddc" });
+});
+
 router.get('/TrainModel.html', function(req, res, next) {
   res.render('TrainModel', { title: 'ML Based monitoring TrainModel ddc' });
 });
@@ -65,5 +69,38 @@ router.get('/jobCalibrationScen2D.html', function(req, res, next) {
 
 router.get('/web_page_louis.html', function(req, res, next) {
   res.render('web_page_louis', { title: 'Web page louis ddc' });
+});
+
+
+router.get("/test.html", function (req, res, next) {
+	res.render("test", { title: "test ddc" });
+});
+
+router.get("/LLM_support.html", function (req, res, next) {
+	res.render("LLM_support", { title: "LLM_support ddc" });
+});
+
+router.get("/LLM_test.html", function (req, res, next) {
+	res.render("LLM_test", { title: "LLM_test ddc" });
+});
+
+router.get("/network_test.html", function (req, res, next) {
+	res.render("network_test", { title: "network_test ddc" });
+});
+
+router.get("/Case_summary.html", function (req, res, next) {
+	res.render("Case_summary", { title: "Case_summary ddc" });
+});
+
+router.get("/Case_narrative_arnav.html", function (req, res, next) {
+	res.render("Case_narrative_arnav", { title: "Case_narrative_arnav ddc" });
+});
+
+router.get("/Case_narrative_louis.html", function (req, res, next) {
+	res.render("Case_narrative_louis", { title: "Case_narrative_louis ddc" });
+});
+
+router.get("/qna.html", function (req, res, next) {
+	res.render("qna", { title: "qna ddc" });
 });
 module.exports = router;
